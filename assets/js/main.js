@@ -14,3 +14,15 @@ fetch('https://api.openweathermap.org/data/2.5/weather?lat=52.5170365&lon=13.388
     .then(json => {
         console.log(json);
     })
+
+// Standort-Suche
+
+function search(source, name) {
+    var results;
+
+    name = name.toUpperCase();
+    results = source.filter(function (entry) {
+        return entry.name.toUpperCase().indexOf(name) !== -1;
+    });
+    return results;
+}
