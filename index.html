@@ -7,16 +7,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- BootstrapCSS only -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
 
 </head>
 
 <body>
-    <header></header>
-    <main>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iure autem inventore, odit illo maiores
-        error.</main>
-    <footer></footer>
+    <div class="wrapper">
+        <main>
+            <form action="">
+                <input type="text" name="standort_input" id="standort_input" placeholder="Standortsuche...">
+            </form>
+            <section class="topdisplay">
+                <div class="topleft">
+                    <div id="uhrzeit_output">12:30</div>
+                    <div id="standort_output">Frankfurt am Main</div>
+                    <div id="real_feel_output">Gefühlt 21°</div>
+                    <div id="date_output">Fr 3. Juni 2022</div>
+                </div>
+                <div class="topright">
+                    <div id="icon_current">icon</div>
+                    <div id="temperatur_current_output">20°</div>
+                </div>
+            </section>
+            <section class="hourlydisplay">
+                <div id="time_1">9 Uhr</div>
+                <div id="time_2">12 Uhr</div>
+                <div id="time_3">15 Uhr</div>
+                <div id="time_4">18 Uhr</div>
+                <div id="time_5">21 Uhr</div>
+                <div id="time_1_icon">icon</div>
+                <div id="time_2_icon">icon</div>
+                <div id="time_3_icon">icon</div>
+                <div id="time_4_icon">icon</div>
+                <div id="time_5_icon">icon</div>
+                <div id="time_1_temperature">16°</div>
+                <div id="time_2_temperature">16°</div>
+                <div id="time_3_temperature">16°</div>
+                <div id="time_4_temperature">16°</div>
+                <div id="time_5_temperature">16°</div>
+            </section>
+            <section class="dailydisplay">
+                <h2>5 - Tage - Vorhersage</h2>
+                <div class="gridbox">
+                    <div id="day2">Samstag</div>
+                    <div id="day2_icon">icon</div>
+                    <div id="day2_min">min 17° - </div>
+                    <div id="day2_max">max 19°</div>
+                    <div id="day3"></div>
+                    <div id="day3_icon"></div>
+                    <div id="day3_min"></div>
+                    <div id="day3_max"></div>
+                    <div id="day4"></div>
+                    <div id="day4_icon"></div>
+                    <div id="day4_min"></div>
+                    <div id="day4_max"></div>
+                    <div id="day5"></div>
+                    <div id="day5_icon"></div>
+                    <div id="day5_min"></div>
+                    <div id="day5_max"></div>
+                </div>
+            </section>
+        </main>
+    </div>
     <script src="assets/js/main.js"></script>
 </body>
 

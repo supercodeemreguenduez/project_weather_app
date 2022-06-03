@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+/* ================================ 
+        GENERAL STYLES
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: inter;
+    font-weight: 300;
+}
+
+.wrapper {}
+
+
+/* Outer Frame */
+main {
+    border: 1px solid #000;
+    height: 100vh;
+    color: #fff;
+    background-color: #50aee8;
+    padding: 2vh 7.5%;
+}
+
+form {
+    text-align: center;
+    margin: 2vh;
+}
+
+/* TOP */
+.topdisplay {
+    border: 1px solid #fff;
+    display: flex;
+}
+
+.topleft {
+    width: 80%;
+}
+
+#uhrzeit_output {
+    font-size: 2.4rem;
+    padding-bottom: 2vh;
+}
+
+#standort_output {
+    font-size: 1.2rem;
+    height: 8vh;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+#real_feel_output,
+#date_output {
+    font-size: 1.4rem;
+    padding: 2vh 0;
+}
+
+.topright {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#icon_current {
+    margin: 5vh 20% 0 0;
+    align-self: flex-end;
+}
+
+#temperatur_current_output {
+    font-size: 8rem;
+    display: flex;
+    align-items: flex-end;
+    height: auto;
+    align-self: center;
+}
+
+
+/* MIDDLE */
+.hourlydisplay {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    margin: 4vh 0;
+    padding: 1vh 0;
+    font-size: 1.2rem;
+    color: #978686;
+    font-weight: 600;
+    background-color: rgba(251, 248, 248, 0.7);
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* BOTTOM */
+.dailydisplay {}
