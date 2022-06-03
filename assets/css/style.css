@@ -35,12 +35,34 @@ main {
 form {
     text-align: center;
     margin: 2vh;
+    height: 20px;
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 2px 0 2px 1%;
+    background-color: rgba(254, 249, 249, 0.6);
+    border: none;
+    transition: padding 0.5s;
+}
+
+input:focus {
+    padding: 10px 0;
+    font-size: 1.8rem;
+    color: #7D8184;
+    transition: padding 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /* TOP */
 .topdisplay {
-    border: 1px solid #fff;
     display: flex;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 4px 8px 0px;
+    padding: 2vh 5%;
 }
 
 .topleft {
@@ -99,8 +121,27 @@ form {
     font-weight: 600;
     background-color: rgba(251, 248, 248, 0.7);
     border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 4px 8px 0px;
     text-align: center;
 }
 
 /* BOTTOM */
-.dailydisplay {}
+.dailydisplay {
+    background-image: linear-gradient(180deg, rgba(83, 81, 194, 0.9), rgba(83, 81, 194, 0));
+    padding: 2vh 5%;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 4px 8px 0px;
+}
+
+.dailydisplay h2 {
+    padding-bottom: 3vh;
+}
+
+.gridboxchange {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2vh;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
