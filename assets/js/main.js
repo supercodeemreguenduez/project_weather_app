@@ -17,7 +17,6 @@ currentTime();
 
 const currentDate = new Date();
 const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
-console.log(currentDate.toLocaleDateString('de-DE', options));
 
 document.getElementById("date_output").innerHTML = currentDate.toLocaleDateString('de-DE', options)
 
@@ -37,7 +36,6 @@ const minTemp = (addDay, list) => {
             minTempArray.push(list[i].main.temp_min);
         }
     }
-    console.log(minTempArray);
     return Math.floor(Math.min(...minTempArray));
 }
 
@@ -134,7 +132,6 @@ const weatherQuery = standort_input => {
     fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${standort_input}&appid=04e1ab889dbc9ff41996c453df63349e&units=metric`)
         .then(response => response.json())
         .then(json => {
-            console.log(json);
             let day1_date = new Date(json.list[0].dt * 1000).getDate();
 
             // clear previous entries
