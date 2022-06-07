@@ -11,47 +11,64 @@
 </head>
 
 <body>
-    <header>
-        <label for="city-search">Standort suche . . .</label>
-        <input type="search" id="city-search" name="cs">
-        <button>Suche</button>
-
-        <header class="p-3 mb-3 border-bottom">
-            <div class="container">
-                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
-                        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
-                            <use xlink:href="#bootstrap"></use>
-                        </svg>
-                    </a>
-
-                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-                        <input type="search" class="form-control" placeholder="Standort suche . . ."
-                            aria-label="Search">
-                    </form>
-
-                    <!-- <div class="dropdown text-end">
-                        <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32"
-                                class="rounded-circle">
-                        </a>
-                        <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
-                            <li><a class="dropdown-item" href="#">New project...</a></li>
-                            <li><a class="dropdown-item" href="#">Settings</a></li>
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Sign out</a></li>
-                        </ul>
-                    </div>
-                </div> -->
+    <div class="wrapper">
+        <main>
+            <form action="">
+                <input type="text" sname="standort_input" id="standort_input" placeholder="Standortsuche...">
+            </form>
+            <section class="topdisplay">
+                <div class="topleft">
+                    <div id="uhrzeit_output">12:30</div>
+                    <div id="standort_output">Frankfurt am Main</div>
+                    <div id="real_feel_output">Gefühlt 21°</div>
+                    <div id="date_output">Fr 3. Juni 2022</div>
                 </div>
-                </section>
-                </main>
-            </div>
-            <script src="assets/js/main.js"></script>
+                <div class="topright">
+                    <div id="icon_current">icon</div>
+                    <div id="temperatur_current_output">20°</div>
+                </div>
+            </section>
+            <section class="hourlydisplay">
+                <div id="time_1">9 Uhr</div>
+                <div id="time_2">12 Uhr</div>
+                <div id="time_3">15 Uhr</div>
+                <div id="time_4">18 Uhr</div>
+                <div id="time_5">21 Uhr</div>
+                <div id="time_1_icon">icon</div>
+                <div id="time_2_icon">icon</div>
+                <div id="time_3_icon">icon</div>
+                <div id="time_4_icon">icon</div>
+                <div id="time_5_icon">icon</div>
+                <div id="time_1_temperature">16°</div>
+                <div id="time_2_temperature">16°</div>
+                <div id="time_3_temperature">16°</div>
+                <div id="time_4_temperature">16°</div>
+                <div id="time_5_temperature">16°</div>
+            </section>
+            <section class="dailydisplay">
+                <h2>5 - Tage - Vorhersage</h2>
+                <div class="gridboxchange">
+                    <div id="day2">Samstag</div>
+                    <div id="day2_icon">icon</div>
+                    <div id="day2_min"></div>
+                    <div id="day2_max">max 19°</div>
+                    <div id="day3">Sonntag</div>
+                    <div id="day3_icon"></div>
+                    <div id="day3_min"></div>
+                    <div id="day3_max"></div>
+                    <div id="day4">Montag</div>
+                    <div id="day4_icon"></div>
+                    <div id="day4_min"></div>
+                    <div id="day4_max"></div>
+                    <div id="day5">Dienstag</div>
+                    <div id="day5_icon"></div>
+                    <div id="day5_min"></div>
+                    <div id="day5_max"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
