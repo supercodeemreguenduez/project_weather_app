@@ -113,7 +113,7 @@ const setIcon = id_input => {
 const weekDay = (addDay, list) => {
     let current_day = new Date((list[0].dt * 1000)).getDay()
     if (weekdays[(current_day + addDay)]) {
-        return weekdays[(current_day + addDay)];
+        return weekdays[(current_day + 1 + addDay)];
     } else {
         addDay -= (6 - current_day);
         if (addDay > 6) {
