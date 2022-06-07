@@ -120,7 +120,7 @@ const weekDay = (addDay, list) => {
             addDay = addDay % 7;
         }
         current_day = 0;
-        return weekdays[(current_day + addDay)];
+        return weekdays[(current_day + 1 + addDay)];
     }
 
 }
