@@ -22,7 +22,6 @@
 //     })
 // my api key 04e1ab889dbc9ff41996c453df63349e
 
-<<<<<<< HEAD
 fetch('https://api.openweathermap.org/data/2.5/forecast?q=Berlin&appid=04e1ab889dbc9ff41996c453df63349e')
     .then(response => response.json())
     .then(json => {
@@ -65,7 +64,6 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=Berlin&appid=04e1ab889d
 //     });
 //     return results;
 // }
-=======
 // fetch('https://api.openweathermap.org/data/2.5/forecast?q=Berlin&appid=04e1ab889dbc9ff41996c453df63349e')
 //     .then(response => response.json())
 //     .then(json => {
@@ -80,4 +78,3 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=Berlin&appid=04e1ab889d
 //             // document.body.innerHTML = json.list[i].weather[0].main;
 //         }
 //     })
->>>>>>> 9ea2924e89b90bd3205695bb6744e10925a15fa7
