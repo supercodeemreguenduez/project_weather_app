@@ -20,13 +20,9 @@ body {
     font-weight: 300;
 }
 
-.wrapper {}
-
-
 /* Outer Frame */
 main {
     border: 1px solid #000;
-    height: 100vh;
     color: #fff;
     background-color: #50aee8;
     padding: 2vh 7.5%;
@@ -95,8 +91,13 @@ input:focus {
 }
 
 #icon_current {
-    margin: 5vh 20% 0 0;
     align-self: flex-end;
+    justify-self: start;
+    height: 100%;
+}
+
+#icon_current img {
+    width: 128px;
 }
 
 #temperatur_current_output {
@@ -112,7 +113,7 @@ input:focus {
 .hourlydisplay {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 32px);
     gap: 5px;
     margin: 4vh 0;
     padding: 1vh 0;
@@ -123,6 +124,15 @@ input:focus {
     border-radius: 5px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 4px 8px 0px;
     text-align: center;
+}
+
+.hourlydisplay div {
+    align-self: center;
+}
+
+.hourlydisplay img {
+    height: 32px;
+    justify-self: center;
 }
 
 /* BOTTOM */
@@ -144,4 +154,14 @@ input:focus {
     gap: 2vh;
     font-size: 1.4rem;
     font-weight: 400;
+    align-items: center;
+}
+
+.dailyicon {
+    display: flex;
+    justify-content: center;
+}
+
+.gridboxchange img {
+    height: 32px;
 }
